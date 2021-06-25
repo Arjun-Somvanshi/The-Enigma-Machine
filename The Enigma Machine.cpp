@@ -2,7 +2,7 @@
 #include<fstream>
 #include<string.h>
 #include<stdio.h>
-#include<conio.h>
+//#include<conio.h>
 #include<ctype.h>
 using namespace std;
 
@@ -347,7 +347,7 @@ void rotor_wiring(char encrypting_list[3][27])//ROTOR ENCRYPTION KEYS
         cout<<"FNF";
 	cout<<"\nWould you like to add a rotor setting?(yes/no)\n";
 	cin>>choice;
-	while(strcmpi(choice,"yes")==0)
+	while(strcmp(choice,"yes")==0)
 	{
 	    cout<<"How many rotor wirings will you enter?\n";
         cin>>n;
@@ -438,7 +438,6 @@ int main()
 {
 	char choice[3];
 	cout<<"\t\t\t\t\t\tWelcome to the ENIGMA MACHINE!";
-    cout<<"\nDeveloped Solution by A-Star Enterprise";
     cout<<"\nCredits: Arjun Somvanshi, Manvendra Somvanshi\n";
     cout<<"\nWe have a default setting for the enigma machine. If you are not well-versed with it's working you can use our default settings.";
     cout<<"\nDo you want to use default settings?[yes/no]: ";
@@ -446,7 +445,7 @@ int main()
 
 	char message[1000],message1[1000],encrypted_message[1000];
 
-	if(strcmpi(choice,"yes")==0)
+	if(strcmp(choice,"yes")==0)
 	{
 		char w[3][27]={{"JPGVOUMFYQBENHZRDKASXLICTW"},{"NZJHGRCXMYSWBOUFAIVLPEKQDT"},{"FKQHTLXOCBJSPDZRAMEWNIUYGV"}};
 		char plugboard_pairs[10][3]={{"AB"},{"CD"},{"EF"},{"GH"},{"IJ"},{"KL"},{"MN"},{"OP"},{"QR"},{"ST"}};
